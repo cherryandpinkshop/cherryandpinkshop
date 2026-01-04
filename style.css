@@ -273,14 +273,19 @@ footer {
   padding: 40px 0;
 }
 
-.logo {
-  width: 180px;
+/* ===== LOGO (Luxury) ===== */
+
 }
 .logo {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  background: transparent;
-  border: 1px dashed red;
+  height: 42px;
+  width: auto;
+  display: block;
+  transition: opacity 0.3s ease;
 }
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+
 
