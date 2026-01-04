@@ -2,28 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Thank You | Cherry & Pink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry & Pink | Mystery Book Boxes</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png">
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <header class="navbar">
-    <h1 class="logo">Cherry & Pink</h1>
+    <a href="index.html"><img src="assets/logo.png" alt="Cherry & Pink" style="height:50px;"></a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="index.html#products">Boxes</a>
-      <a href="index.html#how-it-works">How It Works</a>
+      <a href="#hero">Home</a>
+      <a href="#products">Boxes</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#payment">Order</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Thank You!</h2>
-    <p>We received your order request and will contact you soon via email.</p>
-    <p>Don’t forget to check your Venmo payment.</p>
-    <a href="index.html"><button class="cta">Back to Home</button></a>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <h1>Cherry & Pink</h1>
+    <h2>Mystery Book Boxes Delivered to You</h2>
+    <p>Choose your favorite genres and let us surprise you!</p>
+    <a href="#products"><button class="cta">Explore Boxes</button></a>
   </section>
 
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="card">
+        <h3>1. Choose Genres</h3>
+        <p>Select your favorite genres for your mystery box.</p>
+      </div>
+      <div class="card">
+        <h3>2. Place Order</h3>
+        <p>Email us your order and pay via Venmo.</p>
+      </div>
+      <div class="card">
+        <h3>3. Receive Your Box</h3>
+        <p>We handpick the books and ship them to you!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS / BOXES -->
+  <section class="products" id="products">
+    <h2>Our Boxes</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h4>Surprise Fiction Box</h4>
+        <p>Full of best-selling novels and hidden gems.</p>
+        <button onclick="window.location.href='thank-you.html'">Order Now</button>
+      </div>
+      <div class="product">
+        <h4>Young Adult Mystery Box</h4>
+        <p>Thrills, romance, and adventures just for you!</p>
+        <button onclick="window.location.href='thank-you.html'">Order Now</button>
+      </div>
+      <div class="product">
+        <h4>Fantasy & Sci-Fi Box</h4>
+        <p>Epic worlds and unforgettable characters await.</p>
+        <button onclick="window.location.href='thank-you.html'">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT / ORDER SECTION -->
+  <section class="payment" id="payment">
+    <h2>Place Your Order</h2>
+    <p>Email us at: <a href="mailto:cherryandpink@example.com">cherryandpink@example.com</a></p>
+    <p>Pay via Venmo: <strong>@CherryAndPink</strong></p>
+    <p>After payment, click <a href="thank-you.html">here</a> to confirm your order and see our Thank You page!</p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Cherry & Pink</p>
   </footer>
+
 </body>
 </html>
+
