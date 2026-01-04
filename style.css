@@ -267,4 +267,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+} .site-header {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
+
+.logo {
+  width: 180px;
+}
+
