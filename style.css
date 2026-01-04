@@ -276,4 +276,11 @@ footer {
 .logo {
   width: 180px;
 }
+.logo {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: transparent;
+  border: 1px dashed red;
+}
 
