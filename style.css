@@ -1,0 +1,270 @@
+/* ===========================
+   ROOT COLORS
+=========================== */
+:root {
+  --pink: #f6c1d1;
+  --teal: #2bb0a6;
+  --cream: #fff8ef;
+  --neon: #39ff14;
+  --dark: #333;
+}
+
+/* ===========================
+   GLOBAL SETTINGS
+=========================== */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--cream);
+  color: var(--dark);
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--pink);
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--teal);
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--pink), var(--cream));
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background: var(--teal);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: #239087;
+}
+
+/* ===========================
+   HOW IT WORKS
+=========================== */
+.how-it-works {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ===========================
+   PRODUCTS / BOXES
+=========================== */
+.products {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  border-radius: 12px;
+  padding: 2rem;
+  background: var(--cream);
+  width: 250px;
+  position: relative;
+  text-align: left;
+}
+
+.product h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.product button {
+  margin-top: 1rem;
+  background: var(--teal);
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #239087;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--teal);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge.neon {
+  background: var(--neon);
+  color: black;
+}
+
+/* ===========================
+   GENRES & NOTES
+=========================== */
+.genres {
+  margin-top: 1rem;
+}
+
+.genres label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.genres p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.genres .small-note {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  opacity: 0.8;
+}
+
+/* ===========================
+   PAYMENT SECTION
+=========================== */
+.payment {
+  padding: 3rem 2rem;
+  background: var(--pink);
+  text-align: center;
+}
+
+.payment ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.payment li {
+  margin: 0.4rem 0;
+}
+
+.pay-details {
+  background: white;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.small-note {
+  font-size: 0.75rem;
+  margin-top: 0.8rem;
+  opacity: 0.7;
+}
+
+/* ===========================
+   THANK YOU PAGE
+=========================== */
+.thank-you {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--pink);
+  margin-top: 2rem;
+}
+
+/* ===========================
+   MOBILE RESPONSIVENESS
+=========================== */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-grid, .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
